@@ -25,7 +25,8 @@ const students = [
 const classesStudent = students.map((student) =>
   student.name === "Marco Lanci" ? student.class : false
 );
-
 const classStudent = classesStudent.filter((clas) => clas !== false);
-
 console.log(classStudent);
+
+const marcoLanci = students.find((student) => student.name === "Marco Lanci");
+console.log(marcoLanci.class);

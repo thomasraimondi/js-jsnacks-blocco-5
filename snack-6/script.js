@@ -15,12 +15,15 @@ const zucchine = [
 
 const zucchinePlus = [];
 const zucchineOthers = [];
-
 zucchine.forEach((zucchina) =>
   zucchina.length >= 15
     ? zucchinePlus.push(zucchina)
     : zucchineOthers.push(zucchina)
 );
-
 console.log(zucchinePlus);
 console.log(zucchineOthers);
+
+const zucchineUp = zucchine.filter((zucchina) => zucchina.length >= 15);
+const zucchineDown = zucchine.filter((zucchina) => zucchina.length < 15);
+console.log(zucchineUp);
+console.log(zucchineDown);

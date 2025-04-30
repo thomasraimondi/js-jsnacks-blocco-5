@@ -4,7 +4,8 @@ const nums = [2, 8, 4, 7, 12, 87];
 // Risultato: [2, 8, 4, 12]
 
 let evenNumbers = [];
-
 nums.forEach((num) => (num % 2 === 0 ? evenNumbers.push(num) : false));
-
 console.log(evenNumbers);
+
+const numbersEven = nums.filter((num) => num % 2 === 0);
+console.log(numbersEven);

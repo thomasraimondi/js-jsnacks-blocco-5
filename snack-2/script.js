@@ -8,3 +8,6 @@ const people = [
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
 people.forEach((person) => console.log(person.name));
+
+const peopleName = people.map((person) => person.name);
+peopleName.forEach((name) => console.log(name));

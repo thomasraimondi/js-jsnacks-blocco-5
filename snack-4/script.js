@@ -9,7 +9,8 @@ const posts = [
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico'
 
 let authors = [];
-
 posts.forEach((post) => authors.push(post.author));
-
 console.log(authors);
+
+const postsAthor = posts.map((post) => post.author);
+console.log(postsAthor);
